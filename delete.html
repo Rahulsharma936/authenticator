@@ -37,7 +37,7 @@
             document.getElementById("count").innerText=response.data
         }
 
-        async function signup(){
+        async function delete(){
             let username = document.getElementById("username").value;
             let password = document.getElementById("password").value;
             let result = document.getElementById("result");
@@ -59,7 +59,7 @@
                 console.error("Error during account removal:", error);
             }
         }
-        document.getElementById("btn").addEventListener("click", signup);
+        document.getElementById("btn").addEventListener("click", delete);
         document.addEventListener("DOMContentLoaded", count)
     </script>
 </body>
